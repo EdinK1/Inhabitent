@@ -1,0 +1,64 @@
+
+// Journal
+
+.blog, .page-id-40 {
+
+    .site-content {
+        display: flex;
+        width: 60%;
+        margin: 0 auto;
+    
+            .content-area {
+                width: 70%;
+                border-right: 1px solid #ccc;
+    
+                .entry-header {
+                    position: relative;
+    
+                    img {
+                        width: 95%;
+                    }
+    
+                .entry-title {
+                    font-size: 1.8rem;
+                    top: 35px;
+                    left: 0;
+                    background: darkgreen;
+                    padding: 1.2rem;
+                    position: absolute;
+    
+                    a {
+                        color: #fff;
+                        text-decoration: none;
+                        }
+                    }
+    
+                    .entry-meta {
+                        position: absolute;
+                        display: inline-block;
+                        right: 40px;
+                        bottom: 5.5px;
+                        text-transform: uppercase;
+                        color: #fff;
+                        padding: 0.4rem 1.5rem;
+                        background: darkgreen;
+                    }
+                }
+            }
+    
+            .entry-content {
+               width: 100%;
+                padding: 2rem 0;
+                line-height: 1.5;
+                p {
+                    font-size: 1.1rem;
+                }
+            }
+    
+            .widget-area {
+                width: 30%;
+                text-align: left;
+            }
+        }
+    }
+    
