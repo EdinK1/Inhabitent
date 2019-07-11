@@ -30,7 +30,8 @@ ehthumbs.db
 !README.md
 
 plugins/*
-!plugins/inhabitent-functionality
+!plugins/inhabitent-plugin
+!plugins/inhabitent-blocks-master
 
 themes/*
 !themes/inhabitent
