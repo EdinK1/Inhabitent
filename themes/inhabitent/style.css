@@ -608,6 +608,26 @@ a {
     width: 30%;
     text-align: left; }
 
+.archive .shop {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 20px;
+  margin-top: 2rem; }
+  .archive .shop img {
+    width: auto;
+    height: 250px;
+    -o-object-fit: cover;
+       object-fit: cover; }
+  .archive .shop .shop-desc {
+    background: #eee;
+    padding: 0.4rem 0.2rem; }
+    .archive .shop .shop-desc a {
+      color: #000;
+      text-decoration: none;
+      font-size: 1rem;
+      font-weight: 300;
+      padding-left: 0.8rem; }
+
 .page-id-40 .entry-title {
   font-size: 2.5rem;
   text-transform: uppercase;
@@ -680,6 +700,26 @@ a {
 /* Search widget. */
 .widget_search .search-submit {
   display: none; }
+
+.widget-area {
+  padding: 2rem 0 2rem 4rem;
+  font-size: 1.1rem;
+  line-height: 1.5; }
+  .widget-area h2 {
+    font-size: 1.7rem;
+    margin-bottom: 1.5rem; }
+  .widget-area i {
+    padding-right: 1rem; }
+  .widget-area a {
+    color: green;
+    text-decoration: none; }
+  .widget-area p {
+    margin-bottom: 1rem; }
+  .widget-area ul {
+    margin: 0; }
+  .widget-area li {
+    list-style: none;
+    text-align: left; }
 
 /*--------------------------------------------------------------
 # Content

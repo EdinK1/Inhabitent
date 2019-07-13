@@ -41,7 +41,7 @@ function inhabitent_cpt_product() {
 		'label'                 => __( 'Product', 'text_domain' ),
 		'description'           => __( 'Product Post', 'text_domain' ),
 		'labels'                => $labels,
-		'supports'              => array( 'title', 'editor' ),
+		'supports'              => array( 'title', 'editor' , 'thumbnail'),
 		'taxonomies'            => array( 'product' ),
 		'hierarchical'          => false,
 		'public'                => true,
@@ -54,7 +54,8 @@ function inhabitent_cpt_product() {
 		'has_archive'           => true,
 		'exclude_from_search'   => false,
 		'publicly_queryable'    => true,
-        'capability_type'       => 'page',
+		'capability_type'       => 'page',
+		'template_lock' 		=> 'all',
         'show_in_rest'          => true,
         'template' => array(
             array( 'core/paragraph', array(

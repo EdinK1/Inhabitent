@@ -15,3 +15,37 @@
 .widget_search .search-submit {
 	display: none;
 }
+
+
+.widget-area {
+	padding: 2rem 0 2rem 4rem;
+	font-size: 1.1rem;
+	line-height: 1.5;
+
+	h2 {
+		font-size: 1.7rem;
+		margin-bottom: 1.5rem;
+	}
+
+	i {
+		padding-right: 1rem;
+	}
+
+	a {
+		color: green;
+		text-decoration: none;
+	}
+
+	p {
+		margin-bottom: 1rem;
+	}
+
+	ul {
+		margin: 0;
+	}
+
+	li {
+		list-style: none;
+		text-align: left;
+	}
+}

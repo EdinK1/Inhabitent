@@ -26,7 +26,6 @@
 			<?php if(has_block('inhabitent/hero-image-header')) : echo 'transparent';  endif;?>" role="banner">
 				<div class="site-branding">
 						<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
-							<h1 class="site-title">Inhabitent</h1>
 						</a>
 				</div><!-- .site-branding -->
 
