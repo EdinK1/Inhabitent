@@ -1,6 +1,6 @@
 <?php
 /**
- * Template part for displaying single posts.
+ * Template part for displaying posts.
  *
  * @package RED_Starter_Theme
  */
@@ -13,24 +13,31 @@
 			<?php the_post_thumbnail( 'large' ); ?>
 		<?php endif; ?>
 
-		<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
+		<?php the_title( sprintf( '<h2 class="entry-title"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h2>' ); ?>
 
+		<?php if ( 'post' === get_post_type() ) : ?>
 		<div class="entry-meta">
-			<?php red_starter_posted_on(); ?> / <?php red_starter_comment_count(); ?> / <?php red_starter_posted_by(); ?>
+			<?php red_starter_posted_on(); ?> / <?php comments_number( '0 Comments', '1 Comment', '% Comments' ); ?> / <?php red_starter_posted_by(); ?>
 		</div><!-- .entry-meta -->
+		<?php endif; ?>
 	</header><!-- .entry-header -->
 
-	<div class="entry-content">
+	<div class="entry-content single-post-content">
 		<?php the_content(); ?>
-		<?php
-			wp_link_pages( array(
-				'before' => '<div class="page-links">' . esc_html( 'Pages:' ),
-				'after'  => '</div>',
-			) );
-		?>
-	</div><!-- .entry-content -->
+		
+		<div class="single-post-cat-tags"> 
+		<span>Posted in → <?php the_category('<span>', '</span>'); ?></span>
+		<span><?php the_tags(); ?></span>
+		</div>
+	
+		<div class="single-post-social">
+		<a href="#"><i class="fab fa-facebook-f"></i>Like</a>
+		<a href="#"><i class="fab fa-twitter"></i>Tweet</a>
+		<a href="#"><i class="fab fa-pinterest"></i>Pin</a>		
+		</div>
 
-	<footer class="entry-footer">
-		<?php red_starter_entry_footer(); ?>
-	</footer><!-- .entry-footer -->
+	</div><!-- .entry-content -->
 </article><!-- #post-## -->
+
+
+<?php comments_template('./comments.php', true) ?>
