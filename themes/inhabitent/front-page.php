@@ -15,6 +15,41 @@ get_header(); ?>
 			
 			<?php endwhile; // End of the loop. ?>
 		</section>
+
+		<div class="container">
+		<section class="shop-stuff">
+
+			<h2 class="title">Shop Stuff</h2>
+
+			<ul class="shop-terms">
+
+			<?php $terms = get_terms(array(
+			'taxonomy' => 'product_type',
+			));?>
+
+			<?php if ($terms) : foreach ($terms as $term) :?>
+
+			
+				<li class="shop-term">
+					<img src="#" />
+					<p><?= $term->description ?></p>
+				<a href="<?= esc_url(get_term_link($term)); ?>">
+					<?= $term->name; ?> Stuff
+					</a>
+				</li>
+
+			<?php endforeach; endif;?>
+			</ul>
+		</section>
+
+		<section class="journal">
+
+			<h2 class="title">Inhabitent Journal</h2>
+			
+			
+		</section>
+
+		</div>
 		</main><!-- #main -->
 	</div><!-- #primary -->
 
