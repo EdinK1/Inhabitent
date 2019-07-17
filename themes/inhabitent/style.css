@@ -222,6 +222,15 @@ td,
 th {
   padding: 0; }
 
+html, body {
+  background: #ffffff;
+  font-size: 16px;
+  font-family: 'Merriweather', serif;
+  line-height: 1.75; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Novecento Sans Web', sans-serif; }
+
 .container {
   width: 1140px;
   margin: auto; }
@@ -571,7 +580,8 @@ a {
   font-size: 2.4rem;
   text-transform: uppercase;
   font-weight: 300;
-  padding: 2rem 0 3rem 0; }
+  padding: 2rem 0 3rem 0;
+  font-family: Novecento Sans Web,sans-serif; }
 
 .page-id-53 .shop-stuff {
   padding: 1rem 0 2rem 0; }
@@ -583,8 +593,8 @@ a {
         -ms-flex-align: center;
             align-items: center; }
     .page-id-53 .shop-stuff .shop-terms .shop-term {
-      border: 1px solid #ccc;
-      border-top: 5px solid #ccc;
+      border: 1px solid #e1e1e1;
+      border-top: 5px solid #e1e1e1;
       padding: 1rem;
       display: -webkit-box;
       display: -ms-flexbox;
@@ -599,7 +609,7 @@ a {
               flex-direction: column;
       text-align: center; }
       .page-id-53 .shop-stuff .shop-terms .shop-term:hover {
-        border-color: orange; }
+        border-color: #d99054; }
       .page-id-53 .shop-stuff .shop-terms .shop-term img {
         width: 70px;
         height: 70px; }
@@ -622,14 +632,15 @@ a {
   display: flex; }
   .page-id-53 .journal-posts li {
     margin-right: 1rem;
-    list-style: none; }
+    list-style: none;
+    background: #e1e1e1; }
     .page-id-53 .journal-posts li img {
       min-height: 250px; }
     .page-id-53 .journal-posts li .journal-desc {
-      border: 1px solid #ccc;
-      border-top: 5px solid #ccc;
       padding: 0.85rem;
-      position: relative; }
+      position: relative;
+      background: #fff;
+      border: 1px solid #e1e1e1; }
       .page-id-53 .journal-posts li .journal-desc .journal-date {
         margin-bottom: 0; }
       .page-id-53 .journal-posts li .journal-desc h2 {
@@ -674,7 +685,7 @@ a {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    border-bottom: 1px dashed #ccc;
+    border-bottom: 1px dashed #c8c8c8;
     padding-bottom: 2.5rem; }
     .archive .page-header .shop-terms li {
       list-style: none;
@@ -690,16 +701,16 @@ a {
   grid-template-columns: repeat(4, 1fr);
   grid-gap: 20px;
   margin: 3rem 0; }
+  .archive .shop .entry-header {
+    background: #c8c8c8; }
   .archive .shop img {
     width: auto;
     height: 250px;
     -o-object-fit: cover;
        object-fit: cover; }
   .archive .shop .shop-desc {
-    border-top: 5px solid #e1e1e1;
-    border-left: 1px solid #e1e1e1;
-    border-right: 1px solid #e1e1e1;
-    border-bottom: 1px solid #e1e1e1;
+    background: #fff;
+    border: 1px solid #e1e1e1;
     padding: 0.4rem 0.8rem;
     display: -webkit-box;
     display: -ms-flexbox;
