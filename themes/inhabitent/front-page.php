@@ -61,6 +61,26 @@ get_header(); ?>
 
 		</ul>		
 		</section>
+
+		<section class="adventures">
+
+		<h2 class="title">Latest Adventures</h2>
+
+		<ul class="adventures-posts">
+
+        <?php
+          $adventures_posts = get_posts(array(
+            'post_type' => 'adventures',
+			'posts_per_page' => 4,
+		  ));
+
+		  foreach ($adventures_posts as $post) : setup_postdata($post);
+		  get_template_part('template-parts/content', 'front-page-adventures');
+		  endforeach; wp_reset_postdata();
+	  ?>
+		<a class="btn" href="<?php echo esc_url(get_post_type_archive_link('adventures')); ?>">Read More</a>
+		</ul>		
+		</section>
 		</div>
 		</main><!-- #main -->
 	</div><!-- #primary -->
