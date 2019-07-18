@@ -1,9 +1,9 @@
 /*!
-Theme Name: RED Starter Theme
+Theme Name: Inhabitent 
 Theme URI: http://underscores.me/
-Author: RED Academy
-Author URI: http://www.redacademy.com
-Description: A WordPress starter theme for RED Academy students.
+Author: Edin Kaymakqi
+Author URI: https://edink1.github.io/
+Description: A WordPress starter theme for everyone.
 Version: 1.0.0
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -43,6 +43,8 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 # Page Templates
 	## Front page
 --------------------------------------------------------------*/
+@import url(../fonts/Merriweather/style.css);
+@import url(../fonts/Novecento/style.css);
 html {
   font-family: sans-serif;
   -webkit-text-size-adjust: 100%;
@@ -222,6 +224,9 @@ td,
 th {
   padding: 0; }
 
+/*--------------------------------------------------------------
+# Embedded Fonts
+--------------------------------------------------------------*/
 html, body {
   background: #ffffff;
   font-size: 16px;
@@ -235,9 +240,6 @@ h1, h2, h3, h4, h5, h6 {
   width: 1140px;
   margin: auto; }
 
-/*--------------------------------------------------------------
-# Embedded Fonts
---------------------------------------------------------------*/
 /*--------------------------------------------------------------
 # Typography
 --------------------------------------------------------------*/
