@@ -22,7 +22,7 @@
 		<a class="skip-link screen-reader-text" href="#content"><?php echo esc_html( 'Skip to content' ); ?></a>
 
 		<header id="masthead" class="site-header 
-			<?php if(has_block('inhabitent/hero-image-header')) : echo 'transparent';  endif;?>" role="banner">
+			<?php if(has_block('inhabitent/hero-image-header') || is_singular( 'adventures' )) : echo 'transparent';  endif;?>" role="banner">
 				<div class="site-branding">
 						<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
 						</a>
@@ -31,7 +31,7 @@
 				<nav id="site-navigation" class="main-navigation" role="navigation">
 				<div class="logo">
 					<a href="<?= get_home_url() ?>">
-					<img src="<?= has_block('inhabitent/hero-image-header') ?  get_stylesheet_directory_uri() . '/images/logos/3.png' : get_stylesheet_directory_uri() . '/images/logos/2.png';?>" alt="">
+					<img src="<?= has_block('inhabitent/hero-image-header') || is_singular( 'adventures' ) ?  get_stylesheet_directory_uri() . '/images/logos/3.png' : get_stylesheet_directory_uri() . '/images/logos/2.png';?>" alt="">
 					</a>
 				</div>	
 				
