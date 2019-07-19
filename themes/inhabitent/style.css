@@ -464,7 +464,7 @@ a {
   .main-navigation a {
     text-decoration: none;
     text-transform: uppercase;
-    color: green;
+    color: #248a83;
     font-size: 1rem; }
   .main-navigation .nav-menu {
     display: -webkit-box;
@@ -552,7 +552,7 @@ a {
   text-transform: uppercase;
   font-weight: 300;
   padding: 2rem 0 3rem 0;
-  font-family: Novecento Sans Web,sans-serif; }
+  font-family: ' Novecento Sans Web', sans-serif; }
 
 .page-id-53 .shop-stuff {
   padding: 1rem 0 2rem 0; }
@@ -614,16 +614,19 @@ a {
       position: relative;
       background: #fff;
       border: 1px solid #e1e1e1; }
-      .page-id-53 .journal-posts li .journal-desc .journal-date {
-        margin-bottom: 0; }
+      .page-id-53 .journal-posts li .journal-desc .journal-date, .page-id-53 .journal-posts li .journal-desc .journal-comments {
+        margin-bottom: 0;
+        font-size: 0.75rem; }
       .page-id-53 .journal-posts li .journal-desc h2 {
         line-height: 1.1;
         margin-bottom: 3.6rem; }
         .page-id-53 .journal-posts li .journal-desc h2 a {
           text-decoration: none;
           font-size: 1.4rem;
-          color: green;
+          color: #248a83;
           text-transform: uppercase; }
+          .page-id-53 .journal-posts li .journal-desc h2 a:hover {
+            color: #000; }
       .page-id-53 .journal-posts li .journal-desc .btn {
         position: absolute;
         bottom: 10px;
@@ -638,6 +641,61 @@ a {
           background-color: #248a83;
           border: 1px solid #248a83;
           color: #fff; }
+
+.page-id-53 .adventures {
+  padding: 1rem 0 2rem 0; }
+  .page-id-53 .adventures .adventures-posts {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-gap: 20px; }
+    .page-id-53 .adventures .adventures-posts li {
+      list-style: none; }
+      .page-id-53 .adventures .adventures-posts li .adventure-desc {
+        min-height: 280px;
+        height: 100%;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat; }
+      .page-id-53 .adventures .adventures-posts li:first-child {
+        grid-column: span 2;
+        grid-row: span 2; }
+        .page-id-53 .adventures .adventures-posts li:first-child .adventure-title {
+          font-size: 3rem;
+          padding: 3rem 0 2rem 1.5rem; }
+      .page-id-53 .adventures .adventures-posts li:nth-child(2) {
+        grid-column: span 2; }
+        .page-id-53 .adventures .adventures-posts li:nth-child(2) .adventure-title {
+          font-size: 2.4rem;
+          padding: 3rem 0 2rem 1.5rem; }
+      .page-id-53 .adventures .adventures-posts li:nth-child(3) .adventure-title, .page-id-53 .adventures .adventures-posts li:nth-child(4) .adventure-title {
+        font-size: 1.5rem;
+        padding: 2rem 1rem 1rem 1.5rem; }
+  .page-id-53 .adventures a {
+    color: #fff;
+    text-decoration: none; }
+  .page-id-53 .adventures .btn {
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 0.5rem 1.5rem;
+    font-size: 0.9rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    margin: 3rem 0 0 1.5rem; }
+    .page-id-53 .adventures .btn:hover {
+      background-color: #248a83;
+      border: 1px solid #248a83;
+      color: #fff; }
+  .page-id-53 .adventures .btn-more {
+    color: #fff;
+    background: #248a83;
+    padding: 0.6rem 0;
+    font-size: 1.2rem;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase; }
+    .page-id-53 .adventures .btn-more:hover {
+      background: #19625d; }
 
 .archive .page-header {
   text-align: center;
@@ -664,7 +722,7 @@ a {
       list-style: none;
       font-size: 1.2rem; }
     .archive .page-header .shop-terms a {
-      color: green;
+      color: #248a83;
       padding-right: 3rem;
       text-decoration: none;
       text-transform: uppercase; }
@@ -762,22 +820,6 @@ a {
           .single-product main article .entry-content .single-product-social a i {
             padding-right: 0.5rem; }
 
-.single-adventures .entry-header {
-  height: 100vh;
-  width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center; }
-  .single-adventures .entry-header img {
-    height: 100%;
-    width: 100%; }
-
 .single-adventures .entry-content {
   width: 800px;
   margin: 0 auto 4.5rem auto;
@@ -824,13 +866,14 @@ a {
       .blog .site-content .content-area .entry-header img, .page-id-40 .site-content .content-area .entry-header img, .single-post .site-content .content-area .entry-header img {
         width: 95%; }
       .blog .site-content .content-area .entry-header .entry-title, .page-id-40 .site-content .content-area .entry-header .entry-title, .single-post .site-content .content-area .entry-header .entry-title {
-        font-size: 1.8rem;
+        font-size: 2.1rem;
         text-transform: uppercase;
         top: 35px;
         left: 0;
-        background: darkgreen;
-        padding: 1.2rem;
-        position: absolute; }
+        background: #248a83;
+        padding: .75rem 1.5rem;
+        position: absolute;
+        width: calc(100% - 25%); }
         .blog .site-content .content-area .entry-header .entry-title a, .page-id-40 .site-content .content-area .entry-header .entry-title a, .single-post .site-content .content-area .entry-header .entry-title a {
           color: #fff;
           text-decoration: none; }
@@ -842,20 +885,33 @@ a {
         text-transform: uppercase;
         color: #fff;
         padding: 0.4rem 1.5rem;
-        background: darkgreen; }
+        background: #248a83; }
   .blog .site-content .entry-content, .page-id-40 .site-content .entry-content, .single-post .site-content .entry-content {
     width: 100%;
     padding: 2rem 0;
     line-height: 1.5; }
     .blog .site-content .entry-content p, .page-id-40 .site-content .entry-content p, .single-post .site-content .entry-content p {
       font-size: 1.1rem;
-      width: 95%; }
+      width: 95%;
+      margin-bottom: 1.8rem; }
     .blog .site-content .entry-content span, .page-id-40 .site-content .entry-content span, .single-post .site-content .entry-content span {
       text-transform: uppercase;
       padding-right: 1rem; }
       .blog .site-content .entry-content span a, .page-id-40 .site-content .entry-content span a, .single-post .site-content .entry-content span a {
         text-decoration: none;
-        color: green; }
+        color: #248a83; }
+    .blog .site-content .entry-content .btn, .page-id-40 .site-content .entry-content .btn, .single-post .site-content .entry-content .btn {
+      color: #000;
+      border: 1px solid #000;
+      padding: .6rem 1.3rem;
+      font-size: .9rem;
+      text-decoration: none;
+      text-transform: uppercase; }
+      .blog .site-content .entry-content .btn:hover, .page-id-40 .site-content .entry-content .btn:hover, .single-post .site-content .entry-content .btn:hover {
+        background: #248a83;
+        color: #fff; }
+      .blog .site-content .entry-content .btn:visited, .page-id-40 .site-content .entry-content .btn:visited, .single-post .site-content .entry-content .btn:visited {
+        background: #248a83; }
     .blog .site-content .entry-content .single-post-social, .page-id-40 .site-content .entry-content .single-post-social, .single-post .site-content .entry-content .single-post-social {
       padding: 2rem 0; }
       .blog .site-content .entry-content .single-post-social a, .page-id-40 .site-content .entry-content .single-post-social a, .single-post .site-content .entry-content .single-post-social a {
@@ -1012,7 +1068,7 @@ a {
   .widget-area i {
     padding-right: 1rem; }
   .widget-area a {
-    color: green;
+    color: #248a83;
     text-decoration: none; }
   .widget-area p {
     margin-bottom: 1rem; }
