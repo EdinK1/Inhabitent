@@ -72,13 +72,14 @@ get_header(); ?>
           $adventures_posts = get_posts(array(
             'post_type' => 'adventures',
 			'posts_per_page' => 4,
+			'order' => 'ASC'
 		  ));
 
 		  foreach ($adventures_posts as $post) : setup_postdata($post);
 		  get_template_part('template-parts/content', 'front-page-adventures');
 		  endforeach; wp_reset_postdata();
-	  ?>
-		<a class="btn" href="<?php echo esc_url(get_post_type_archive_link('adventures')); ?>">Read More</a>
+		  ?>
+		<a class="btn-more" href="<?php echo esc_url(get_post_type_archive_link('adventures')); ?>">More Adventures</a>
 		</ul>		
 		</section>
 		</div>
