@@ -1,16 +1,7 @@
 		<li>
-		<?php if ( has_post_thumbnail() ) : ?>
-			<?php the_post_thumbnail( 'large' ); ?>
-		<?php endif; ?>
+		<div style="background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(<?php the_post_thumbnail_url(); ?>) no-repeat center center/cover" class="adventure-desc">			
 
-		<div class="journal-desc">			
-		<?php if ( 'post' === get_post_type() ) : ?>
-			<p class="journal-date">
-			<?php red_starter_posted_on(); ?> / <?php comments_number( '0 Comments', '1 Comment', '% Comments' ); ?>
-		</p>
-		<?php endif; ?>
-
-		<?php the_title( sprintf( '<h2 class="journal-title"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h2>' ); ?>
+		<?php the_title( sprintf( '<h2 class="adventure-title"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h2>' ); ?>
 		<a class="btn" href="<?php echo esc_url(get_permalink()); ?>">Read More</a>
 	</div>
 	</li>
