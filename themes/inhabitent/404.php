@@ -13,6 +13,7 @@ get_header(); ?>
 		<main id="main" class="site-main" role="main">
 
 			<section class="error-404 not-found">
+				<div class="container">
 				<header class="page-header">
 					<h1 class="page-title"><?php echo esc_html( 'Oops! That page can&rsquo;t be found.' ); ?></h1>
 				</header><!-- .page-header -->
@@ -45,11 +46,10 @@ get_header(); ?>
 						$archive_content = '<p>' . sprintf( esc_html( 'Try looking in the monthly archives. %1$s' ), convert_smilies( ':)' ) ) . '</p>';
 						the_widget( 'WP_Widget_Archives', 'dropdown=1', "after_title=</h2>$archive_content" );
 					?>
-
+				</div>	
 				</div><!-- .page-content -->
 			</section><!-- .error-404 -->
-
 		</main><!-- #main -->
 	</div><!-- #primary -->
-
+<?php get_sidebar(); ?>
 <?php get_footer(); ?>
