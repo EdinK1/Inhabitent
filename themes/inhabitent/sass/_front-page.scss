@@ -1,7 +1,19 @@
 .page-id-53 {
 
+    .center-logo {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        overflow: hidden;
+    }
+
     .hero-image-header {
         background-position: top !important;
+
+        .entry-title {
+            display: none;
+        }
     }
 
     .title {
