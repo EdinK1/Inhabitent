@@ -1,0 +1,93 @@
+.search {
+    .site-content {
+        display: flex;
+        width: 60%;
+        margin: 0 auto;
+    
+            h1 {
+                font-size: 2.7rem;
+                padding: 1rem;
+                width: 95%;
+                border-bottom: 1px solid #e1e1e1;
+                margin-bottom: 3rem;
+            }
+
+            .content-area {
+                width: 70%;
+                border-right: 1px solid #ccc;
+    
+                .entry-header {
+    
+                    img {
+                        width: 95%;
+                    }
+    
+                .entry-title {
+                    font-size: 2.1rem;
+                    text-transform: uppercase;
+                    width: calc(100% - 25%);
+                    margin: 4rem 0 1rem 0;
+
+                    a {
+                        color: #248a83;
+                        text-decoration: none;
+
+                        &:hover {
+                            color: #000;
+                        }
+                    }
+                }                    
+            }
+
+            p {
+                margin: 1.5rem 0;
+                width: 95%;
+            }
+
+            .btn {
+                color: #000;
+                border: 1px solid #000;
+                padding: .6rem 1.3rem;
+                font-size: .9rem;
+                text-decoration: none;
+                text-transform: uppercase;
+
+                &:hover {
+                    background: #248a83;
+                    color: #fff;
+                    border: none;
+                }
+
+                &:visited {
+                    background: #248a83;
+                }   
+            }
+        }
+
+        .search-pagination {
+            border-top: 1px solid #e1e1e1;
+            padding-top: 1.5rem;
+            width: 95%;
+            margin: 4rem 0;
+            
+            a, span {
+                color: #fff;
+                font-size: 0.9rem;
+                background: #248a83;
+                padding: 0.4rem 0.7rem;
+                text-transform: uppercase;
+                margin: 0 0.3rem 0 0;
+                text-decoration: none;
+            
+                &:hover {
+                    background: #2f1339;
+                    color: #fff;
+                }
+            }
+
+            .current {
+                background: #808080;
+            }
+        }
+    }
+}
