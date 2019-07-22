@@ -18,30 +18,45 @@
 
 
 .widget-area {
-	padding: 2rem 0 2rem 4rem;
+	padding: 0 0 2rem 4rem;
 	font-size: 1.1rem;
 	line-height: 1.5;
 
 	h2 {
-		font-size: 1.7rem;
-		margin-bottom: 1.5rem;
+		color: #2f1339;
+		font-size: 1.5rem;
+		margin: 2rem 0;
+		text-transform: uppercase;
+		font-family: 'Novecento Sans Web', sans-serif;
 	}
 
 	i {
-		padding-right: 1rem;
+		padding-right: 0.8rem;
+		font-size: 0.9rem;
+		color: #404040;
 	}
 
 	a {
 		color: #248a83;
+		font-size: 1rem;
 		text-decoration: none;
+		font-family: 'Merriweather Web', serif;
+
+		
+		&:hover {
+			color: #2f1339;
+		}
 	}
 
 	span {
 		font-weight: bold;
+		font-size: 1rem;
+		font-family: 'Merriweather Web', serif;
 	}
 
 	p {
 		margin-bottom: 1rem;
+		font-size: 1rem;
 	}
 
 	ul {
@@ -51,5 +66,15 @@
 	li {
 		list-style: none;
 		text-align: left;
+		padding-bottom: 0.3rem;
+		
+		a {
+			font-family: 'Merriweather Web', serif; 	
+			font-size: 1rem;
+
+			&:hover {
+				color: #2f1339;
+			}
+		}
 	}
 }
