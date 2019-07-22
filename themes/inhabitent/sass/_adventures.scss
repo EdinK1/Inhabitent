@@ -15,6 +15,7 @@
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         grid-gap: 20px;
+        margin-bottom: 7rem;
 
         .adventure {
             list-style: none;
@@ -39,6 +40,12 @@
                 .adventure-title {
                     font-size: 3rem;
                     padding-bottom: 3rem;
+                    text-transform: normal;
+                    font-weight: 300;
+
+                    a {
+                        font-family: 'Merriweather Web', serif;
+                    }
                 }
 
                 a {
