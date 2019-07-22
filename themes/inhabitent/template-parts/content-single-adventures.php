@@ -9,7 +9,7 @@
 
 <main id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
-<article style= "background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(<?php the_post_thumbnail_url(); ?>) no-repeat center center/cover; height: 100vh" >
+<article style= "background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(<?php the_post_thumbnail_url(); ?>) no-repeat center center/cover; height: 100vh" >
 </article>
 <div class="entry-content">
 		<?php the_title( '<h2 class="adventure-title">', '</h2>' ); ?>
