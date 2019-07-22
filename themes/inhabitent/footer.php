@@ -9,7 +9,7 @@
 
 			</div><!-- #content -->
 
-			<footer id="colophon" class="site-footer" role="contentinfo">
+			<footer style="background: url(<?= get_stylesheet_directory_uri() . '/images/dark-wood.png'; ?>)" id="colophon" class="site-footer" role="contentinfo">
 				<div class="site-info container">
 					<ul>
 						<span class="info-title">Contact Info</span>
@@ -35,7 +35,7 @@
 						<li><span>Sunday: </span>Closed</li>
 					</ul>
 					<ul class="footer-last">
-						<img class="footer-logo" src="http://localhost/inhabitent/wp-content/themes/inhabitent/images/logos/4.png" alt="">
+						<img class="footer-logo" src="<?= get_stylesheet_directory_uri() . '/images/logos/4.png'; ?>" alt="">
 					</ul>
 					</div><!-- .site-info -->
 				<p>COPYRIGHT © 2019 INHABITENT</p>
