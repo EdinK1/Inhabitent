@@ -21,17 +21,16 @@
         .single-product-title {
             margin: 0;
             font-size: 2.4rem;
-            color: orange;
+            color: #d99054;
             text-transform: uppercase;
+            font-family: 'Novecento Sans Web' ,sans-serif;
         }
 
         .single-product-price {
             padding: 1rem 0 1.5rem 0;
             font-weight: 300;
-
-            &:before {
-                content: '$';
-            }
+            font-size: 1.8rem;
+            font-family: 'Novecento Sans Web' ,sans-serif;
         }
 
         p {

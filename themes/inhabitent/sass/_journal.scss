@@ -20,15 +20,15 @@
                     }
     
                 .entry-title {
-                    font-size: 2.1rem;
+                    font-size: 2.3rem;
                     text-transform: uppercase;
                     top: 35px;
                     left: 0;
                     background: #248a83;
-                    padding: .75rem 1.5rem;
+                    padding: .6rem 1.2rem;
                     position: absolute;
                     width: calc(100% - 25%);
-
+                    
                     a {
                         color: #fff;
                         text-decoration: none;
@@ -42,7 +42,8 @@
                         bottom: 5.5px;
                         text-transform: uppercase;
                         color: #fff;
-                        padding: 0.4rem 1.5rem;
+                        padding: 0.3rem 1.5rem;
+                        font-family: 'Novecento Sans Web' ,sans-serif;
                         background: #248a83;
                     }
                 }
