@@ -1,7 +1,7 @@
 // Footer
 
 .site-footer {
-    height: 40vh;
+    height: 35vh;
     color: #fff;
 
     .site-info {
@@ -18,19 +18,21 @@
     }
 
     .info-title {
-        color: orange;
+        color: #d99054;
+        font-family: 'Novecento Sans Web' ,sans-serif;
         font-size: 1.3rem;
         padding-bottom: 0.4rem;
         text-transform: uppercase;
     }
 
     li {
-        font-size: 1.1rem;
+        font-size: 1rem;
         padding: 0.5rem 0;
     }
 
     a {
         color: #fff;
+        font-family: 'Merriweather Web', serif;
         text-decoration: none;
         display: inline;
     }
@@ -56,5 +58,6 @@
 
     p {
         text-align: center;
+        font-family: 'Novecento Sans Web' ,sans-serif;
     }
 }
