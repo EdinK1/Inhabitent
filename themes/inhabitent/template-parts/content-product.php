@@ -14,7 +14,7 @@
 
 	</header>
 		<?php the_title( sprintf( '<div class="shop-desc"><h2 class="entry-title"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ),'</a></h2>' ); ?>
-		<span class="entry-meta shop-price"> <?=number_format( get_post_custom()['price'][0], 2);  
+		<span class="entry-meta shop-price">$<?=number_format( get_post_custom()['price'][0], 2);  
         ?>
       </span>
 	</header><!-- .entry-header -->

@@ -16,7 +16,7 @@
 
 	<div class="entry-content">
 		<?php the_title( '<h1 class="entry-title single-product-title">', '</h1>' ); ?>
-       <h2 class="single-product-price"> <?php echo number_format( get_post_custom()['price'][0], 2); ?> </h2> 
+       <h2 class="single-product-price">$<?php echo number_format( get_post_custom()['price'][0], 2); ?> </h2> 
        <?php the_content(); ?>
 
        <div class="single-product-social">
