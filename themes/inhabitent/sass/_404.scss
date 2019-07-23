@@ -5,6 +5,11 @@
         width: 60%;
         margin: 0 auto;
         padding-bottom: 3rem;
+
+        h1 {
+            font-family: 'Novecento Sans Web', sans-serif;
+            font-weight: 600;
+        }
     }
 
     .content-area {
@@ -26,11 +31,17 @@
 
             h2 { 
                 font-size: 1.7rem;
+                font-family: 'Novecento Sans Web', sans-serif;
+                color: #2f1339;
             }
 
             li {
                 list-style: none;
                 line-height: 1.75;
+
+                a {
+                    font-family: 'Merriweather Web', serif;
+                }
             }
 
         .page-title {
