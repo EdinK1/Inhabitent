@@ -1,4 +1,4 @@
-# ![2](https://user-images.githubusercontent.com/38442554/61687674-d996de00-acd7-11e9-80f6-d7679a598cf0.png) Inhabitent Site
+# Inhabitent Site<img style="width: 300px; height: 300px;" src="https://user-images.githubusercontent.com/38442554/61687674-d996de00-acd7-11e9-80f6-d7679a598cf0.png" />
 
 A WordPress starter theme for RED Academy students, forked from Underscores.
 
