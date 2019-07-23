@@ -107,3 +107,14 @@
     }
   })(container);
 })();
+
+    if(jQuery('.site-header').hasClass('transparent')) { 
+
+        jQuery(window).scroll(function() {
+            if (jQuery(window).scrollTop() > 1000){
+            jQuery('.site-header').removeClass( 'transparent')  
+          } else if (jQuery(window).scrollTop() < 1000) {
+            jQuery('.site-header').addClass( 'transparent')        
+          }
+        })
+    }
