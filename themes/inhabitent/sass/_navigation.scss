@@ -26,13 +26,6 @@ a {
 
 /* Menus */
 
-.main-navigation-white {
-	background: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8));
-	border-bottom: 1px solid #eee;
-	position: fixed;
-	z-index: 1;
-}
-
 .main-navigation {
 	display: flex;
 	width: 100%;
@@ -58,7 +51,7 @@ a {
 			border: none;
 			transition: all .5s ease;
 			background: transparent;
-			color: #fff;
+			color: #404040;
 			outline: none;
 			box-shadow: none;
 
@@ -73,9 +66,10 @@ a {
 		}
 
 		i {
-			color: #fff;
+			color: #248a83;
 			padding-top: 1.3rem;
 			padding-left: 0.5rem;
+			font-size: 0.95rem;
 		}
 	}
 
