@@ -27,7 +27,7 @@
 		
 		<div class="single-post-cat-tags"> 
 		<span>Posted in → <?php the_category('<span>', '</span>'); ?></span>
-		<span><?php the_tags(); ?></span>
+		<span><?php the_tags('Tagged → '); ?></span>
 		</div>
 	
 		<div class="single-post-social">
