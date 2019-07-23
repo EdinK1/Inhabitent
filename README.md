@@ -1,8 +1,5 @@
-<<<<<<< HEAD
 # Inhabitent Site <img style="width: 50px; height: 30px;" src="https://user-images.githubusercontent.com/38442554/61687674-d996de00-acd7-11e9-80f6-d7679a598cf0.png" />
-=======
-# Inhabitent Site<img style="width: 300px; height: 300px;" src="https://user-images.githubusercontent.com/38442554/61687674-d996de00-acd7-11e9-80f6-d7679a598cf0.png" />
->>>>>>> c5c79f54a6c45c60d82fefd8d432f2405f20ffa9
+
 
 ## A WordPress custom theme based on underscores theme.
 
@@ -33,14 +30,14 @@ I used a lot of PHP while working with Wordpress. PHP is an old programming lang
 ## Project Snapshots
 
 <div align="center" float="left">
-    <img border= "1px solid #eee"; width="500px" height="700px" src="https://user-images.githubusercontent.com/38442554/61693753-f8e83800-ace4-11e9-93e1-423d0badbc9b.png">
-    <img border= "1px solid #eee"; width="500px" height="500px" src="https://user-images.githubusercontent.com/38442554/61693863-2b923080-ace5-11e9-839b-b66fef49a475.png">
-    <img border= "1px solid #eee"; width="500px" height="300px" src="https://user-images.githubusercontent.com/38442554/61694336-17026800-ace6-11e9-96cb-8b872e3743f1.png">
-    <img border= "1px solid #eee"; width="500px" height="700px" src="https://user-images.githubusercontent.com/38442554/61694364-22559380-ace6-11e9-8888-a2a202dc1314.png">
-    <img border= "1px solid #eee"; width="500px" height="500px" src="https://user-images.githubusercontent.com/38442554/61694395-33060980-ace6-11e9-92ab-e1cad8615c0f.png">
-    <img border= "1px solid #eee"; width="500px" height="500px" src="https://user-images.githubusercontent.com/38442554/61694418-41542580-ace6-11e9-8584-2f391d253e37.png">
-    <img border= "1px solid #eee"; width="500px" height="500px" src="https://user-images.githubusercontent.com/38442554/61694449-503ad800-ace6-11e9-93ce-ab88307e0f55.png">
-    <img border= "1px solid #eee"; width="500px" height="500px" src="https://user-images.githubusercontent.com/38442554/61694471-5d57c700-ace6-11e9-9b05-cd8f2cac9751.png">
+    <img width="500px" height="500px" src="https://user-images.githubusercontent.com/38442554/61693753-f8e83800-ace4-11e9-93e1-423d0badbc9b.png">
+    <img width="500px" height="500px" src="https://user-images.githubusercontent.com/38442554/61693863-2b923080-ace5-11e9-839b-b66fef49a475.png">
+    <img width="500px" height="500px" src="https://user-images.githubusercontent.com/38442554/61694336-17026800-ace6-11e9-96cb-8b872e3743f1.png">
+    <img width="500px" height="500px" src="https://user-images.githubusercontent.com/38442554/61694364-22559380-ace6-11e9-8888-a2a202dc1314.png">
+    <img width="500px" height="500px" src="https://user-images.githubusercontent.com/38442554/61694395-33060980-ace6-11e9-92ab-e1cad8615c0f.png">
+    <img width="500px" height="500px" src="https://user-images.githubusercontent.com/38442554/61694418-41542580-ace6-11e9-8584-2f391d253e37.png">
+    <img width="500px" height="500px" src="https://user-images.githubusercontent.com/38442554/61694449-503ad800-ace6-11e9-93ce-ab88307e0f55.png">
+    <img width="500px" height="500px" src="https://user-images.githubusercontent.com/38442554/61694471-5d57c700-ace6-11e9-9b05-cd8f2cac9751.png">
 </div>
 
 
