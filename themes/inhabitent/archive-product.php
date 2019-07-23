@@ -13,7 +13,7 @@ get_header(); ?>
 		<?php
 		$args = array('numberposts' => 16,
 			'post_type' => 'product',
-			'order'       => 'ASC' 	
+			'order'       => 'DESC' 	
 		);
 			$posts = get_posts($args);
 		?>

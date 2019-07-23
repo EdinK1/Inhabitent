@@ -72,7 +72,7 @@ get_header(); ?>
           $adventures_posts = get_posts(array(
             'post_type' => 'adventures',
 			'posts_per_page' => 4,
-			'order' => 'ASC'
+			'order' => 'DESC'
 		  ));
 
 		  foreach ($adventures_posts as $post) : setup_postdata($post);
