@@ -13,7 +13,8 @@ get_header(); ?>
 		<?php
 		$args = array('numberposts' => 16,
 			'post_type' => 'product',
-			'order'       => 'ASC');
+			'order'       => 'ASC' 	
+		);
 			$posts = get_posts($args);
 		?>
 
@@ -25,7 +26,8 @@ get_header(); ?>
 			<header class="page-header">
 			<h1 class="shop-title">Shop Stuff</h1>
 			<?php $terms = get_terms(array(
-            'taxonomy' => 'product_type',
+			'taxonomy' => 'product_type',
+			'order' => 'ASC'
           ));?>
 
         <ul class="shop-terms">
