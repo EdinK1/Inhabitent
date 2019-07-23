@@ -91,5 +91,29 @@
                 background: #808080;
             }
         }
+
+        .page-content {
+            p {
+                display: none;
+            }
+        }
+
+        fieldset {
+            border: none;
+            padding: 0;
+            margin: 1.5rem 0 2.5rem 0;
+
+            i {
+                display: none;
+            }
+
+            input {
+                color: #666;
+                background-color: #f4f4f4;
+                border: 1px solid #e1e1e1;
+                border-radius: 0;
+                padding: 0.4rem 0.2rem;
+            }            
+        }
     }
 }
