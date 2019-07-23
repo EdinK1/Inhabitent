@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 # Inhabitent Site <img style="width: 50px; height: 30px;" src="https://user-images.githubusercontent.com/38442554/61687674-d996de00-acd7-11e9-80f6-d7679a598cf0.png" />
+=======
+# Inhabitent Site<img style="width: 300px; height: 300px;" src="https://user-images.githubusercontent.com/38442554/61687674-d996de00-acd7-11e9-80f6-d7679a598cf0.png" />
+>>>>>>> c5c79f54a6c45c60d82fefd8d432f2405f20ffa9
 
 ## A WordPress custom theme based on underscores theme.
 

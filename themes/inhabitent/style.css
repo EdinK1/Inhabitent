@@ -240,14 +240,62 @@ th {
   width: 60%;
   margin: 0 auto; }
 
+.error404 .site-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 60%;
+  margin: 0 auto;
+  padding-bottom: 3rem; }
+  .error404 .site-content h1 {
+    font-family: 'Novecento Sans Web', sans-serif;
+    font-weight: 600; }
+
+.error404 .content-area {
+  width: 70%;
+  border-right: 1px solid #ccc; }
+  .error404 .content-area a {
+    text-decoration: none;
+    color: #248a83; }
+  .error404 .content-area ul {
+    margin: 1.5rem 0 2.5rem 0; }
+  .error404 .content-area p {
+    margin: 1.5rem 0 0.4rem 0; }
+  .error404 .content-area h2 {
+    font-size: 1.7rem;
+    font-family: 'Novecento Sans Web', sans-serif;
+    color: #2f1339; }
+  .error404 .content-area li {
+    list-style: none;
+    line-height: 1.75; }
+    .error404 .content-area li a {
+      font-family: 'Merriweather Web', serif; }
+  .error404 .content-area .page-title {
+    font-size: 2.9rem; }
+  .error404 .content-area fieldset {
+    border: none;
+    padding: 0;
+    margin: 1.5rem 0 2.5rem 0; }
+    .error404 .content-area fieldset i {
+      display: none; }
+    .error404 .content-area fieldset input {
+      color: #666;
+      background-color: #f4f4f4;
+      border: 1px solid #e1e1e1;
+      border-radius: 0;
+      padding: 0.4rem 0.2rem; }
+
 html, body {
   background: #ffffff;
   font-size: 16px;
   font-family: "Merriweather Web", serif;
   line-height: 1.75; }
 
-h1, h2, h3, h4, h5, h6 {
+a {
   font-family: 'Novecento Sans Web', sans-serif; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Merriweather Web', sans-serif; }
 
 .container {
   width: 1140px;
@@ -407,8 +455,9 @@ textarea {
   background: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8));
   border-bottom: 1px solid #eee;
   top: 0;
-  position: -webkit-sticky;
-  position: sticky;
+  left: 0;
+  right: 0;
+  position: fixed;
   z-index: 3; }
   .site-header.transparent {
     background: transparent;
@@ -418,6 +467,10 @@ textarea {
     top: 0;
     border: none; }
     .site-header.transparent a {
+      color: #fff; }
+    .site-header.transparent .main-navigation .links .search {
+      color: #fff; }
+    .site-header.transparent .main-navigation .links i {
       color: #fff; }
   .site-header h1 {
     display: none; }
@@ -438,13 +491,6 @@ a {
     outline: 0; }
 
 /* Menus */
-.main-navigation-white {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.8)), to(rgba(255, 255, 255, 0.8)));
-  background: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8));
-  border-bottom: 1px solid #eee;
-  position: fixed;
-  z-index: 1; }
-
 .main-navigation {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -459,13 +505,49 @@ a {
   .main-navigation .logo {
     margin-left: 1rem;
     width: 50px; }
+  .main-navigation .links {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+    .main-navigation .links fieldset {
+      border: none;
+      padding: 0; }
+    .main-navigation .links .search {
+      width: 255px;
+      border: none;
+      -webkit-transition: all .5s ease;
+      transition: all .5s ease;
+      background: transparent;
+      color: #404040;
+      outline: none;
+      -webkit-box-shadow: none;
+              box-shadow: none; }
+      .main-navigation .links .search::-webkit-input-placeholder, .main-navigation .links .search[value] {
+        font-size: 1.2rem;
+        font-family: 'Novecento Sans Web', sans-serif; }
+      .main-navigation .links .search::-ms-input-placeholder, .main-navigation .links .search[value] {
+        font-size: 1.2rem;
+        font-family: 'Novecento Sans Web', sans-serif; }
+      .main-navigation .links .search::placeholder, .main-navigation .links .search[value] {
+        font-size: 1.2rem;
+        font-family: 'Novecento Sans Web', sans-serif; }
+      .main-navigation .links .search:not(:focus):not(:valid) {
+        width: 0; }
+    .main-navigation .links i {
+      color: #248a83;
+      padding-top: 1.3rem;
+      padding-left: 0.5rem;
+      font-size: 0.95rem; }
+  .main-navigation ul {
+    margin: 0 0 0.5rem 0; }
   .main-navigation li {
     padding: 0 0.8rem; }
   .main-navigation a {
     text-decoration: none;
     text-transform: uppercase;
     color: #248a83;
-    font-size: 1rem; }
+    font-size: 1rem;
+    font-family: 'Novecento Sans Web', sans-serif; }
   .main-navigation .nav-menu {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -484,6 +566,84 @@ a {
     display: none; }
   .main-navigation ul {
     display: block; } }
+
+.search .site-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 60%;
+  margin: 0 auto; }
+  .search .site-content h1 {
+    font-size: 2.7rem;
+    padding: 1rem;
+    width: 95%;
+    border-bottom: 1px solid #e1e1e1;
+    font-family: 'Novecento Sans Web', sans-serif;
+    margin-bottom: 3rem; }
+  .search .site-content .content-area {
+    width: 70%;
+    border-right: 1px solid #ccc; }
+    .search .site-content .content-area .entry-header img {
+      width: 95%; }
+    .search .site-content .content-area .entry-header .entry-title {
+      font-size: 2.1rem;
+      text-transform: uppercase;
+      width: calc(100% - 25%);
+      margin: 4rem 0 1rem 0; }
+      .search .site-content .content-area .entry-header .entry-title a {
+        color: #248a83;
+        text-decoration: none; }
+        .search .site-content .content-area .entry-header .entry-title a:hover {
+          color: #000; }
+    .search .site-content .content-area p {
+      margin: 1.5rem 0;
+      width: 95%;
+      line-height: 1.7; }
+    .search .site-content .content-area .btn {
+      color: #000;
+      border: 1px solid #000;
+      padding: .6rem 1.3rem;
+      font-size: .9rem;
+      text-decoration: none;
+      text-transform: uppercase; }
+      .search .site-content .content-area .btn:hover {
+        background: #248a83;
+        color: #fff;
+        border: none; }
+      .search .site-content .content-area .btn:visited {
+        background: #248a83; }
+  .search .site-content .search-pagination {
+    border-top: 1px solid #e1e1e1;
+    padding-top: 1.5rem;
+    width: 95%;
+    margin: 4rem 0; }
+    .search .site-content .search-pagination a, .search .site-content .search-pagination span {
+      color: #fff;
+      font-size: 0.9rem;
+      background: #248a83;
+      padding: 0.4rem 0.7rem;
+      text-transform: uppercase;
+      margin: 0 0.3rem 0 0;
+      text-decoration: none; }
+      .search .site-content .search-pagination a:hover, .search .site-content .search-pagination span:hover {
+        background: #2f1339;
+        color: #fff; }
+    .search .site-content .search-pagination .current {
+      background: #808080; }
+  .search .site-content .page-content p {
+    display: none; }
+  .search .site-content fieldset {
+    border: none;
+    padding: 0;
+    margin: 1.5rem 0 2.5rem 0; }
+    .search .site-content fieldset i {
+      display: none; }
+    .search .site-content fieldset input {
+      color: #666;
+      background-color: #f4f4f4;
+      border: 1px solid #e1e1e1;
+      border-radius: 0;
+      padding: 0.4rem 0.2rem; }
 
 /*--------------------------------------------------------------
 # Accessibility
@@ -543,8 +703,18 @@ a {
   content: "";
   display: table; }
 
+.page-id-53 .center-logo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  overflow: hidden; }
+
 .page-id-53 .hero-image-header {
   background-position: top !important; }
+  .page-id-53 .hero-image-header .entry-title {
+    display: none; }
 
 .page-id-53 .title {
   text-align: center;
@@ -657,6 +827,9 @@ a {
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat; }
+        .page-id-53 .adventures .adventures-posts li .adventure-desc .adventure-title a {
+          font-weight: 300;
+          font-family: 'Merriweather Web', serif; }
       .page-id-53 .adventures .adventures-posts li:first-child {
         grid-column: span 2;
         grid-row: span 2; }
@@ -677,7 +850,7 @@ a {
   .page-id-53 .adventures .btn {
     color: #fff;
     border: 1px solid #fff;
-    padding: 0.5rem 1.5rem;
+    padding: 0.7rem 1.5rem;
     font-size: 0.9rem;
     text-decoration: none;
     text-transform: uppercase;
@@ -701,14 +874,18 @@ a {
   text-align: center;
   text-transform: uppercase; }
   .archive .page-header .shop-title {
-    font-size: 2.6rem; }
+    font-size: 2.5rem;
+    font-family: 'Novecento Sans Web' ,sans-serif;
+    font-weight: 600;
+    margin-top: 2.6rem; }
   .archive .page-header p {
-    font-size: 1.1rem;
+    font-size: 1rem;
     padding: 1.5rem 0;
     font-weight: 300;
     text-transform: none;
     border-bottom: 1px dashed #ccc;
-    padding-bottom: 2.5rem; }
+    padding-bottom: 2.5rem;
+    font-family: 'Merriweather Web', serif; }
   .archive .page-header .shop-terms {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -770,7 +947,8 @@ a {
     .archive .shop .shop-desc a, .archive .shop .shop-desc span {
       background: #fff;
       position: relative;
-      padding-left: 0.3rem; }
+      padding-left: 0.3rem;
+      font-family: 'Merriweather Web', serif; }
     .archive .shop .shop-desc span {
       font-size: 0.9rem;
       padding-top: 0.3rem; }
@@ -793,13 +971,14 @@ a {
       .single-product main article .entry-content .single-product-title {
         margin: 0;
         font-size: 2.4rem;
-        color: orange;
-        text-transform: uppercase; }
+        color: #d99054;
+        text-transform: uppercase;
+        font-family: 'Novecento Sans Web' ,sans-serif; }
       .single-product main article .entry-content .single-product-price {
         padding: 1rem 0 1.5rem 0;
-        font-weight: 300; }
-        .single-product main article .entry-content .single-product-price:before {
-          content: '$'; }
+        font-weight: 300;
+        font-size: 1.8rem;
+        font-family: 'Novecento Sans Web' ,sans-serif; }
       .single-product main article .entry-content p {
         font-size: 1rem;
         margin-bottom: 1.5rem;
@@ -828,10 +1007,13 @@ a {
     font-size: 2.4rem;
     text-transform: uppercase;
     margin: 2.8rem 0 0.3rem 0;
-    text-align: left; }
+    text-align: left;
+    font-family: Novecento Sans Web,sans-serif; }
   .single-adventures .entry-content .adventure-author {
     font-weight: 300;
-    font-size: 1.2rem; }
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    font-family: Novecento Sans Web,sans-serif; }
   .single-adventures .entry-content p {
     font-size: 1rem;
     margin: 1.5rem 0;
@@ -857,7 +1039,7 @@ a {
   display: -ms-flexbox;
   display: flex;
   width: 60%;
-  margin: 0 auto; }
+  margin: 3rem auto 4rem auto; }
   .blog .site-content .content-area, .page-id-40 .site-content .content-area, .single-post .site-content .content-area {
     width: 70%;
     border-right: 1px solid #ccc; }
@@ -866,12 +1048,12 @@ a {
       .blog .site-content .content-area .entry-header img, .page-id-40 .site-content .content-area .entry-header img, .single-post .site-content .content-area .entry-header img {
         width: 95%; }
       .blog .site-content .content-area .entry-header .entry-title, .page-id-40 .site-content .content-area .entry-header .entry-title, .single-post .site-content .content-area .entry-header .entry-title {
-        font-size: 2.1rem;
+        font-size: 2.3rem;
         text-transform: uppercase;
         top: 35px;
         left: 0;
         background: #248a83;
-        padding: .75rem 1.5rem;
+        padding: .6rem 1.2rem;
         position: absolute;
         width: calc(100% - 25%); }
         .blog .site-content .content-area .entry-header .entry-title a, .page-id-40 .site-content .content-area .entry-header .entry-title a, .single-post .site-content .content-area .entry-header .entry-title a {
@@ -884,19 +1066,21 @@ a {
         bottom: 5.5px;
         text-transform: uppercase;
         color: #fff;
-        padding: 0.4rem 1.5rem;
+        padding: 0.3rem 1.5rem;
+        font-family: 'Novecento Sans Web' ,sans-serif;
         background: #248a83; }
   .blog .site-content .entry-content, .page-id-40 .site-content .entry-content, .single-post .site-content .entry-content {
     width: 100%;
     padding: 2rem 0;
     line-height: 1.5; }
     .blog .site-content .entry-content p, .page-id-40 .site-content .entry-content p, .single-post .site-content .entry-content p {
-      font-size: 1.1rem;
+      font-size: 1rem;
       width: 95%;
       margin-bottom: 1.8rem; }
     .blog .site-content .entry-content span, .page-id-40 .site-content .entry-content span, .single-post .site-content .entry-content span {
       text-transform: uppercase;
-      padding-right: 1rem; }
+      padding-right: 1rem;
+      font-family: 'Novecento Sans Web', sans-serif; }
       .blog .site-content .entry-content span a, .page-id-40 .site-content .entry-content span a, .single-post .site-content .entry-content span a {
         text-decoration: none;
         color: #248a83; }
@@ -930,37 +1114,127 @@ a {
   .blog .site-content .widget-area, .page-id-40 .site-content .widget-area, .single-post .site-content .widget-area {
     width: 30%;
     text-align: left; }
+  .blog .site-content .comments-area a, .page-id-40 .site-content .comments-area a, .single-post .site-content .comments-area a {
+    color: #248a83;
+    text-decoration: none; }
+  .blog .site-content .comments-area .comment-list, .page-id-40 .site-content .comments-area .comment-list, .single-post .site-content .comments-area .comment-list {
+    margin: 0; }
   .blog .site-content .comments-area .comments-title, .page-id-40 .site-content .comments-area .comments-title, .single-post .site-content .comments-area .comments-title {
     text-transform: uppercase;
     font-size: 2.2rem;
+    font-family: 'Novecento Sans Web', sans-serif;
     padding-bottom: 0.6rem;
     color: #000; }
-  .blog .site-content .comments-area textarea, .page-id-40 .site-content .comments-area textarea, .single-post .site-content .comments-area textarea {
-    background: #eee; }
+  .blog .site-content .comments-area .comment-body, .page-id-40 .site-content .comments-area .comment-body, .single-post .site-content .comments-area .comment-body {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    padding: 1rem 2rem 2rem 0;
+    width: 95%;
+    border-bottom: 1px solid #e1e1e1; }
+    .blog .site-content .comments-area .comment-body p, .page-id-40 .site-content .comments-area .comment-body p, .single-post .site-content .comments-area .comment-body p {
+      padding-bottom: 1rem; }
+    .blog .site-content .comments-area .comment-body .comment-author-avatar, .page-id-40 .site-content .comments-area .comment-body .comment-author-avatar, .single-post .site-content .comments-area .comment-body .comment-author-avatar {
+      padding-right: 1rem; }
+      .blog .site-content .comments-area .comment-body .comment-author-avatar img, .page-id-40 .site-content .comments-area .comment-body .comment-author-avatar img, .single-post .site-content .comments-area .comment-body .comment-author-avatar img {
+        border-radius: 50%;
+        background: #eee; }
+    .blog .site-content .comments-area .comment-body .fn, .page-id-40 .site-content .comments-area .comment-body .fn, .single-post .site-content .comments-area .comment-body .fn {
+      font-style: normal;
+      font-weight: 700; }
+    .blog .site-content .comments-area .comment-body .comment-metadata, .page-id-40 .site-content .comments-area .comment-body .comment-metadata, .single-post .site-content .comments-area .comment-body .comment-metadata {
+      padding: 0.5rem 0 1.2rem 0; }
+    .blog .site-content .comments-area .comment-body .reply a, .page-id-40 .site-content .comments-area .comment-body .reply a, .single-post .site-content .comments-area .comment-body .reply a {
+      font-family: 'Merriweather Web', serif; }
+  .blog .site-content .comments-area .comment-respond h3, .page-id-40 .site-content .comments-area .comment-respond h3, .single-post .site-content .comments-area .comment-respond h3 {
+    font-size: 2.3rem;
+    margin: 0.8rem 0; }
+  .blog .site-content .comments-area .comment-respond form, .page-id-40 .site-content .comments-area .comment-respond form, .single-post .site-content .comments-area .comment-respond form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap; }
+    .blog .site-content .comments-area .comment-respond form p, .page-id-40 .site-content .comments-area .comment-respond form p, .single-post .site-content .comments-area .comment-respond form p {
+      padding: 1rem 0; }
+    .blog .site-content .comments-area .comment-respond form textarea, .blog .site-content .comments-area .comment-respond form input, .page-id-40 .site-content .comments-area .comment-respond form textarea, .page-id-40 .site-content .comments-area .comment-respond form input, .single-post .site-content .comments-area .comment-respond form textarea, .single-post .site-content .comments-area .comment-respond form input {
+      border: 1px solid #e1e1e1;
+      color: #666;
+      background-color: #f4f4f4;
+      padding: 0.6rem 0;
+      margin-top: 1rem; }
+    .blog .site-content .comments-area .comment-respond form label, .page-id-40 .site-content .comments-area .comment-respond form label, .single-post .site-content .comments-area .comment-respond form label {
+      text-transform: uppercase;
+      font-family: 'Novecento Sans Web', sans-serif; }
+    .blog .site-content .comments-area .comment-respond form .comment-form-comment, .page-id-40 .site-content .comments-area .comment-respond form .comment-form-comment, .single-post .site-content .comments-area .comment-respond form .comment-form-comment {
+      -ms-flex-preferred-size: 95%;
+          flex-basis: 95%; }
+      .blog .site-content .comments-area .comment-respond form .comment-form-comment textarea, .page-id-40 .site-content .comments-area .comment-respond form .comment-form-comment textarea, .single-post .site-content .comments-area .comment-respond form .comment-form-comment textarea {
+        width: 100%; }
+    .blog .site-content .comments-area .comment-respond form .comment-form-author, .blog .site-content .comments-area .comment-respond form .comment-form-email, .page-id-40 .site-content .comments-area .comment-respond form .comment-form-author, .page-id-40 .site-content .comments-area .comment-respond form .comment-form-email, .single-post .site-content .comments-area .comment-respond form .comment-form-author, .single-post .site-content .comments-area .comment-respond form .comment-form-email {
+      -ms-flex-preferred-size: 49%;
+          flex-basis: 49%; }
+      .blog .site-content .comments-area .comment-respond form .comment-form-author input, .blog .site-content .comments-area .comment-respond form .comment-form-email input, .page-id-40 .site-content .comments-area .comment-respond form .comment-form-author input, .page-id-40 .site-content .comments-area .comment-respond form .comment-form-email input, .single-post .site-content .comments-area .comment-respond form .comment-form-author input, .single-post .site-content .comments-area .comment-respond form .comment-form-email input {
+        width: 95%; }
+    .blog .site-content .comments-area .comment-respond form .comment-form-url, .page-id-40 .site-content .comments-area .comment-respond form .comment-form-url, .single-post .site-content .comments-area .comment-respond form .comment-form-url {
+      -ms-flex-preferred-size: 95%;
+          flex-basis: 95%; }
+      .blog .site-content .comments-area .comment-respond form .comment-form-url input, .page-id-40 .site-content .comments-area .comment-respond form .comment-form-url input, .single-post .site-content .comments-area .comment-respond form .comment-form-url input {
+        width: 100%; }
+    .blog .site-content .comments-area .comment-respond form .submit, .page-id-40 .site-content .comments-area .comment-respond form .submit, .single-post .site-content .comments-area .comment-respond form .submit {
+      background: #248a83;
+      border: none;
+      -webkit-box-shadow: none;
+              box-shadow: none;
+      text-shadow: none;
+      border-radius: 0;
+      color: #fff;
+      cursor: pointer;
+      font-family: 'Novecento Sans Web' ,sans-serif;
+      margin: 0 0 2rem 0;
+      font-size: .9rem;
+      padding: 0.8rem 1.4rem;
+      text-decoration: none;
+      text-transform: uppercase; }
 
 .page-id-40 .entry-title {
   font-size: 2.5rem;
   text-transform: uppercase;
   margin-top: 0;
-  margin-bottom: 1.5rem; }
+  margin-bottom: 1.5rem;
+  font-family: 'Novecento Sans Web' ,sans-serif; }
 
 .page-id-40 h2 {
-  font-size: 1.9rem;
+  font-size: 1.8rem;
   text-transform: uppercase;
-  margin: 1.5rem 0; }
+  margin: 1.5rem 0;
+  color: #2f1339;
+  font-family: 'Novecento Sans Web' ,sans-serif; }
+
+.page-id-40 p {
+  font-size: 1rem;
+  line-height: 1.5; }
 
 .page-id-40 input[type='text'],
 .page-id-40 input[type='email'],
 .page-id-40 textarea {
   margin: 0.5rem 0;
-  padding: 0.3rem 1.5rem;
-  background: #eee; }
+  background-color: #f4f4f4;
+  padding: 0.3rem 1.3rem;
+  color: #666;
+  border-radius: 0;
+  border: 1px solid #e1e1e1; }
 
 .page-id-40 textarea {
   width: 90%; }
 
 .page-id-40 label {
   text-transform: uppercase;
+  font-size: 1.1rem;
+  font-family: 'Novecento Sans Web' ,sans-serif;
   padding: 0.5rem 0; }
 
 .page-id-40 input[type='submit'] {
@@ -971,20 +1245,25 @@ a {
   text-transform: uppercase;
   border: none;
   cursor: pointer;
-  background: green;
-  font-size: 1rem;
-  padding: 0.80rem 1.55rem;
+  background: #248a83;
+  font-size: 0.9rem;
+  padding: 0.7rem 1.3rem;
+  font-family: 'Novecento Sans Web' ,sans-serif;
   color: #fff; }
+  .page-id-40 input[type='submit']:hover {
+    background: #19625d; }
 
 .page-id-36 p {
-  font-size: 1.1rem;
-  line-height: 1.7; }
+  font-size: 1rem;
+  line-height: 1.6;
+  padding: 0.5rem 0; }
 
 .page-id-36 h2 {
-  font-size: 2.2rem;
+  font-size: 2.1rem;
   text-align: center;
   text-transform: uppercase;
-  margin-top: 1rem; }
+  font-family: 'Novecento Sans Web' ,sans-serif;
+  color: #2f1339; }
 
 .page-id-36 .entry-content > * {
   width: 800px;
@@ -994,6 +1273,7 @@ a {
     width: 100%;
     margin: 0; }
     .page-id-36 .entry-content > *:first-child .entry-title {
+      font-family: 'Novecento Sans Web' ,sans-serif;
       font-size: 3.1rem;
       text-transform: uppercase;
       color: #000; }
@@ -1004,12 +1284,15 @@ a {
   text-align: center;
   border-bottom: 1px dashed #c8c8c8; }
   .post-type-archive-adventures .page-header .page-title {
-    font-size: 2.4rem; }
+    font-size: 2.4rem;
+    font-family: 'Novecento Sans Web' ,sans-serif;
+    margin-top: 3rem; }
 
 .post-type-archive-adventures .adventures {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-gap: 20px; }
+  grid-gap: 20px;
+  margin-bottom: 7rem; }
   .post-type-archive-adventures .adventures .adventure {
     list-style: none;
     position: relative;
@@ -1030,7 +1313,11 @@ a {
       overflow: hidden; }
       .post-type-archive-adventures .adventures .adventure .adventure-desc .adventure-title {
         font-size: 3rem;
-        padding-bottom: 3rem; }
+        padding-bottom: 3rem;
+        text-transform: normal;
+        font-weight: 300; }
+        .post-type-archive-adventures .adventures .adventure .adventure-desc .adventure-title a {
+          font-family: 'Merriweather Web', serif; }
       .post-type-archive-adventures .adventures .adventure .adventure-desc a {
         color: #fff;
         text-decoration: none; }
@@ -1059,24 +1346,44 @@ a {
   display: none; }
 
 .widget-area {
-  padding: 2rem 0 2rem 4rem;
+  padding: 0 0 2rem 4rem;
   font-size: 1.1rem;
   line-height: 1.5; }
   .widget-area h2 {
-    font-size: 1.7rem;
-    margin-bottom: 1.5rem; }
+    color: #2f1339;
+    font-size: 1.5rem;
+    margin: 2rem 0;
+    text-transform: uppercase;
+    font-family: 'Novecento Sans Web', sans-serif; }
   .widget-area i {
-    padding-right: 1rem; }
+    padding-right: 0.8rem;
+    font-size: 0.9rem;
+    color: #404040; }
   .widget-area a {
     color: #248a83;
-    text-decoration: none; }
+    font-size: 1rem;
+    text-decoration: none;
+    font-family: 'Merriweather Web', serif; }
+    .widget-area a:hover {
+      color: #2f1339; }
+  .widget-area span {
+    font-weight: bold;
+    font-size: 1rem;
+    font-family: 'Merriweather Web', serif; }
   .widget-area p {
-    margin-bottom: 1rem; }
+    margin-bottom: 1rem;
+    font-size: 1rem; }
   .widget-area ul {
     margin: 0; }
   .widget-area li {
     list-style: none;
-    text-align: left; }
+    text-align: left;
+    padding-bottom: 0.3rem; }
+    .widget-area li a {
+      font-family: 'Merriweather Web', serif;
+      font-size: 1rem; }
+      .widget-area li a:hover {
+        color: #2f1339; }
 
 /*--------------------------------------------------------------
 # Content
@@ -1177,8 +1484,7 @@ object {
   display: block; }
 
 .site-footer {
-  height: 40vh;
-  background: url(http://localhost/inhabitent/wp-content/themes/inhabitent/images/dark-wood.png);
+  height: 35vh;
   color: #fff; }
   .site-footer .site-info {
     display: -webkit-box;
@@ -1199,15 +1505,17 @@ object {
     list-style: none;
     margin: 0 2rem; }
   .site-footer .info-title {
-    color: orange;
+    color: #d99054;
+    font-family: 'Novecento Sans Web' ,sans-serif;
     font-size: 1.3rem;
     padding-bottom: 0.4rem;
     text-transform: uppercase; }
   .site-footer li {
-    font-size: 1.1rem;
+    font-size: 1rem;
     padding: 0.5rem 0; }
   .site-footer a {
     color: #fff;
+    font-family: 'Merriweather Web', serif;
     text-decoration: none;
     display: inline; }
   .site-footer span {
@@ -1224,6 +1532,7 @@ object {
     padding-right: 3rem; }
   .site-footer .footer-logo {
     height: 50px;
-    width: 50%; }
+    width: 60%; }
   .site-footer p {
-    text-align: center; }
+    text-align: center;
+    font-family: 'Novecento Sans Web' ,sans-serif; }
