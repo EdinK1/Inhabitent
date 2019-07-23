@@ -45,6 +45,40 @@ a {
 		width: 50px;
 	}
 
+	.links {
+		display: flex;
+
+		fieldset {
+			border: none;
+			padding: 0;
+		}
+
+		.search {
+			width: 255px;
+			border: none;
+			transition: all .5s ease;
+			background: transparent;
+			color: #fff;
+			outline: none;
+			box-shadow: none;
+
+			&::placeholder, &[value] {
+				font-size: 1.2rem;
+				font-family: 'Novecento Sans Web', sans-serif;
+			}
+
+			&:not(:focus):not(:valid) {
+				width: 0;
+			} 
+		}
+
+		i {
+			color: #fff;
+			padding-top: 1.3rem;
+			padding-left: 0.5rem;
+		}
+	}
+
 	ul {
 		margin: 0 0 0.5rem 0;
 	}
