@@ -55,7 +55,7 @@
    * Sets or removes .focus class on an element.
    */
   function toggleFocus() {
-    let self = this;
+    const self = this;
 
     // Move up through the ancestors of the current link until we hit .nav-menu.
     while (-1 === self.className.indexOf('nav-menu')) {
@@ -108,13 +108,12 @@
   })(container);
 })();
 
-    if(jQuery('.site-header').hasClass('transparent')) { 
-
-        jQuery(window).scroll(function() {
-            if (jQuery(window).scrollTop() > 1000){
-            jQuery('.site-header').removeClass( 'transparent')  
-          } else if (jQuery(window).scrollTop() < 1000) {
-            jQuery('.site-header').addClass( 'transparent')        
-          }
-        })
+if (jQuery('.site-header').hasClass('transparent')) {
+  jQuery(window).scroll(function() {
+    if (jQuery(window).scrollTop() > 1000) {
+      jQuery('.site-header').removeClass('transparent');
+    } else if (jQuery(window).scrollTop() < 1000) {
+      jQuery('.site-header').addClass('transparent');
     }
+  });
+}
