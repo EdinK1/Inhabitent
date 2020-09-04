@@ -4,7 +4,7 @@
   "description": "A starter theme for RED students, based on Underscores.",
   "dependencies": {
     "node": "^12.6.0",
-    "node-sass": "^4.12.0"
+    "node-sass": "^4.13.1"
   },
   "devDependencies": {
     "babel-core": "^6.26.0",
